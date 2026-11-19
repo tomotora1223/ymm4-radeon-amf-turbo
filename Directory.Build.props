@@ -1,0 +1,11 @@
+<Project>
+  <PropertyGroup>
+    <YMM4DirPath>$(MSBuildThisFileDirectory)YukkuriMovieMaker_v4_Lite\</YMM4DirPath>
+    <VersionFile>$(MSBuildThisFileDirectory)VERSION</VersionFile>
+    <Version Condition="Exists('$(VersionFile)')">$([System.IO.File]::ReadAllText('$(VersionFile)').Trim())</Version>
+    <Authors>tarutaru247, tp-li-dev, Radeon AMF Turbo contributors</Authors>
+    <Company>Radeon AMF Turbo contributors</Company>
+    <RepositoryUrl>https://github.com/tomotora1223/ymm4-radeon-amf-turbo</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+  </PropertyGroup>
+</Project>
